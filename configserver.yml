@@ -1,0 +1,10 @@
+security.basic.enable: false
+management.security.enabled: false
+spring:
+  profiles.active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/Projects/microservices/config-service
+

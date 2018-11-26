@@ -1,0 +1,15 @@
+spring:
+  application.name: user-service
+  h2:
+    console.enabled: true
+    console.path: /h2-console
+  security:
+    basic.enabled: false
+    oauth2:
+      resource.id: user
+      # resource.jwt.keyUri: http://localhost:9001/token_key
+      resource.userInfoUri: http://localhost:9001/api/user
+      clientId: user-service
+
+
+logging.level.org.springframework.web: DEBUG

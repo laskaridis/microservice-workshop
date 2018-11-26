@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /home/elaskari/Projects/microservices/user-service/build/application.json
+output.logstash:
+  hosts: [ "127.0.0.1:5044" ]
